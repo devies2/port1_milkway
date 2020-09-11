@@ -5,7 +5,7 @@
 
 /* 회원가입 페이지 */
 
-#section {
+#join_section {
     position: relative; height: 950px; padding-top: 200px;
     font-family: 'Nanum Gothic', sans-serif;
     background: url(../images/under-sky.jpg) no-repeat;
@@ -13,7 +13,7 @@
     background-position: center 60%;   
 }
 
-#section .row {
+#join_section .row {
     /* height: 500px; */
     width: 700px;
     /* max-width: 30%; */
@@ -21,14 +21,14 @@
     position: relative;
 }
 
-#section .login-box {
+#join_section .login-box {
     padding-top: 20px;
     padding-bottom: 40px;
 }
 
 
 
-#section h2 {
+#join_section h2 {
     padding-left: 5%;
     font-size: 40px;
     margin-bottom: 5px;
@@ -36,7 +36,7 @@
     text-shadow: 0 0 5px #fff;
 }
 
-#section fieldset {
+#join_section fieldset {
     position: relative;
     margin: 0 auto;
     border: 1px solid #656;
@@ -45,7 +45,7 @@
     margin-bottom: 0px;
 }
 
-#section fieldset > div {
+#join_section fieldset > div {
     /* background: red; */
     position: absolute;
     bottom: 20px;
@@ -55,7 +55,7 @@
     text-transform: capitalize;
 }
 
-#section fieldset > div > span {
+#join_section fieldset > div > span {
     color: #f00;
     vertical-align: middle;
     margin-right: 10px;

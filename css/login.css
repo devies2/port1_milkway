@@ -5,7 +5,7 @@
 
 /* 로그인 페이지 */
 
-#section {
+#login_section {
     position: relative; height: 950px; padding-top: 300px;
     font-family: 'Nanum Gothic', sans-serif;
     background: url(../images/under-sky.jpg) no-repeat;
@@ -13,18 +13,18 @@
     background-position: center 60%;   
 }
 
-#section .row {
+#login_section .row {
     /* height: 500px; */
     max-width: 500px;
     background-color: rgba(255,255,255,0.6);
     position: relative;
 }
 
-#section .login-box {
+#login_section .login-box {
     padding-top: 50px;
 }
 
-#section h2 {
+#login_section h2 {
     padding-left: 10%;
     font-size: 40px;
     margin-bottom: 30px;
@@ -32,7 +32,7 @@
     text-shadow: 0 0 5px #fff;
 }
 
-#section fieldset {
+#login_section fieldset {
     margin: 0 auto;
     border: 1px solid #656;
     width: 80%;
@@ -41,7 +41,7 @@
     margin-bottom: 0px;
 }
 
-#section fieldset label {
+#login_section fieldset label {
     display: inline-block;
     width: 30%;
     /* margin-right: 20px; */
@@ -50,14 +50,14 @@
     text-align: left;
 }
 
-#section fieldset input {
+#login_section fieldset input {
     display: inline-block;
     padding: 10px;
     margin-bottom: 10px;
 
 }
 
-#section fieldset button {
+#login_section fieldset button {
     float: right;
     margin-top: 10px;
     margin-right: 10%;
@@ -67,12 +67,12 @@
     padding: 8px 30px;
     color: #fff;
 }
-#section .login-box > div > div {
+#login_section .login-box > div > div {
     text-align: right;
     margin-top: 10px;
     padding-right: 10%;
 }
-#section .login-box span {
+#login_section .login-box span {
     display: inline-block;
     margin-bottom: 30px;
     /* background: slateblue; */
@@ -80,6 +80,6 @@
     color: #222;
 }
 
-#section .login-box span:nth-of-type(2) {
+#login_section .login-box span:nth-of-type(2) {
     margin-left: 30px;
 }
