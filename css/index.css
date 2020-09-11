@@ -4,7 +4,9 @@
 @import url(./reset.css); */
 
 /* 공통구역을 제외한 메인페이지 스타일 */
-
+#container, #containerBox {
+    height: 100%;
+} 
 #section {
     width: 100%;
     font-family: 'Nanum Gothic', sans-serif;
