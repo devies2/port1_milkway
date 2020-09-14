@@ -4,7 +4,7 @@
             <div class="slide-outer">
                 <div class="slide-inner">
                     <!-- 슬라이드 이미지 삽입 -->
-                    <div>
+                    <div class="slide">
                         <div class="main-text blind">Flowing milky way</div>
                     </div>
                     <div>
@@ -44,35 +44,63 @@
                 <div class="board">
                     <div class="tabTit cf">
                         <ul class="cf">
-                            <li><a href="#none" class="on">NOTICE</a></li>
-                            <li><a href="#none" class="">Q &amp; A</a></li>
+                            <li><a href="#" class="on">NOTICE</a></li>
+                            <li><a href="#" class="">Q &amp; A</a></li>
                         </ul>
                         <span class="more"><a href="#">more&nbsp;&nbsp;&nbsp;+</a></span>
                     </div>
-                    <div class="tabCont">
-                        <div>
-                            <table>
-                                <colgroup>
-                                    <col>
-                                    <col>
-                                </colgroup>
-                                <tr>
-                                    <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
-                                    <td>2222-22-22</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
-                                    <td>2222-22-22</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
-                                    <td>2222-22-22</td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
-                                    <td>2222-22-22</td>
-                                </tr>
-                            </table>
+                    <div class="tabContainer">
+                        <div class="tabCont on">
+                            <div>
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tr>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td>2222-22-22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td>2222-22-22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td>2222-22-22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td>2222-22-22</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tabCont">
+                            <div>
+                                <table>
+                                    <colgroup>
+                                        <col>
+                                        <col>
+                                    </colgroup>
+                                    <tr>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td>2222-22-22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td>2222-22-22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td>2222-22-22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td>2222-22-22</td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,7 +111,7 @@
                 </div>
             </div>
         </article>
-    
+
         <article class="part2">
             <div class="part2-wrap">
                 <div class="part2-text">
@@ -92,13 +120,13 @@
                 <button type="button">more</button>
             </div>
         </article>
-    
+
         <article class="part3">
             <div class="part3-wrap row cf">
                 <div class="box-wrap">
                     <div class="box-img">
                         <div class="text">
-                            <a href="#">
+                            <a href="./images/star1.jpg" download>
                                 <i class="fas fa-share-square"></i>
                             </a>
                             <a href="#">
@@ -130,7 +158,7 @@
                     </div>
                     <div class="box-img">
                         <div class="text">
-                            <a href="#">
+                            <a href="./images/star2.jpg" download>
                                 <i class="fas fa-share-square"></i>
                             </a>
                             <a href="#">
@@ -142,7 +170,7 @@
                 <div class="box-wrap">
                     <div class="box-img">
                         <div class="text">
-                            <a href="#">
+                            <a href="./images/star3.jpg" download>
                                 <i class="fas fa-share-square"></i>
                             </a>
                             <a href="#">
@@ -163,10 +191,10 @@
                         </div>
                     </div>
                 </div>
-    
+
             </div>
         </article>
-    
+
         <article class="part4">
             <figure class="vid">
                 <span class="blind">별이 빛나는 밤 동영상</span>
@@ -174,7 +202,7 @@
             </figure>
             <div>twinkle little stars</div>
         </article>
-    
+
         <article class="part5 row">
             <h3>Lorem ipsum dolor sit</h3>
             <p>Perspiciatis provident amet veli </p>
@@ -188,7 +216,7 @@
             </div>
             <div class="part5-box">
                 <div class="part5-box-inner">
-    
+
                     <i class="fab fa-connectdevelop"></i>
                     <span>flowing milky way</span>
                     <p>Lorem ipsum dolor, sit amet consectetur <br>
@@ -206,3 +234,28 @@
         </article>
     </section>
 </div>
+
+<script>
+    (function ($) {
+        $(function () {
+            $('.slide-inner').slick({
+                slide: 'div', //슬라이드 되어야 할 태그 ex) div, li 
+                infinite: true, //무한 반복 옵션	 
+                slidesToShow: 1, // 한 화면에 보여질 컨텐츠 개수
+                slidesToScroll: 1, //스크롤 한번에 움직일 컨텐츠 개수
+                // speed : 100,	 // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+                // arrows : true, 		// 옆으로 이동하는 화살표 표시 여부
+                // dots : true, 		// 스크롤바 아래 점으로 페이지네이션 여부
+                autoplay: true, // 자동 스크롤 사용 여부
+                autoplaySpeed: 600, // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+                pauseOnHover: true, // 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
+                vertical: false, // 세로 방향 슬라이드 옵션
+                prevArrow: false, // 이전 화살표 모양 설정
+                nextArrow: false, // 다음 화살표 모양 설정
+                dotsClass: "slick-dots", //아래 나오는 페이지네이션(점) css class 지정
+                draggable: true, //드래그 가능 여부 
+
+            });
+        })
+    })(jQuery)
+</script>

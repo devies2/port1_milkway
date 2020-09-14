@@ -168,14 +168,24 @@
     display: inline-block;
     padding: 10px;
 }
-
+#section .part1-wrap .tabContainer {
+    position: relative;
+    width: 565px;
+    height: 211px;
+}
 #section .part1-wrap .tabCont {
+    display: none;
     border: 1px solid #eaeaea;
     color: #999;
     padding: 20px;
     width: 565px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-
+#section .part1-wrap .tabCont.on {
+    display: block;
+}
 #section .part1-wrap .tabCont colgroup col:nth-child(1) {
     width:75%
 }
