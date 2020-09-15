@@ -5,6 +5,26 @@
 font-family: 'Nanum Pen Script', cursive; */
 
 /* 헤더, 푸터등 공통 구역 스타일 */
+
+.introAni {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,1);
+    z-index: 999999999;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.introAni i {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .row {
     max-width: 1152px;
     margin: 0 auto;

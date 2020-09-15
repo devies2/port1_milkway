@@ -1,4 +1,7 @@
 (function($){
+    $(window).load(function(){
+        $('.introAni').delay(500).fadeOut(500)
+    })
     $('#containerBox').load('main.html');
     
     $('.link-set a').on('click', function(e){
