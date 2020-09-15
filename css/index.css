@@ -7,51 +7,53 @@
 #container, #containerBox {
     height: 100%;
 } 
-#section {
+#main_section {
     width: 100%;
     font-family: 'Nanum Gothic', sans-serif;
 }
-
-/* 높이 1080으로  w:는 100% */
-#section .slide-outer {
+#main_section .slide {
     position: relative;
-    height: 1080px; 
+}
+/* 높이 1080으로  w:는 100% */
+#main_section .slide-outer {
+    position: relative;
+    height: 800px; 
     overflow: hidden;
     width: 100%;
 }
 
-#section  .slide-inner  .slide1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(../images/bg_1.jpg) no-repeat 50% 60%; 
+#main_section .slide1 {
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+    background: url(../images/bg_1.jpg) no-repeat 50% 0%; 
     background-size: cover;
     width: 100%;
-    height: 1080px; 
+    height: 800px; 
 
 }
-#section  .slide-inner .slide2 {
-    position: absolute;
+#main_section .slide2 {
+    /* position: absolute;
     top: 0;
-    left: 0;
-    background: url(../images/bg_2.jpg) no-repeat 50% 60%; 
+    left: 0; */
+    background: url(../images/bg_2.jpg) no-repeat 50% 0%; 
     background-size: cover;
     width: 100%;
-    height: 1080px; 
+    height: 800px; 
 }
 
-#section  .slide-inner  .slide3 {
-    position: absolute;
+#main_section .slide3 {
+    /* position: absolute;
     top: 0;
-    left: 0;
-    background: url(../images//bg_4.jpg) no-repeat 50% 60%  ; 
+    left: 0; */
+    background: url(../images//bg_4.jpg) no-repeat 50% 0%  ; 
     background-size: cover;
     width: 100%;
-    height: 1080px; 
+    height: 800px; 
 }
 
 
-#section .slide-inner .main-text {
+#main_section .slide-inner .main-text {
     color: #fff;
     font-size: 70px;
     font-family: 'Nanum Pen Script', cursive;
@@ -64,8 +66,23 @@
     cursor: default;
     letter-spacing: 10px;
 }
+
+.marrow {
+    width: 20px;
+    height: 20px;
+    /* background: red; */
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    /* bottom: 0; */
+    transform: translateY(-50%);
+    z-index: 999;
+    font-size: 50px;
+}
+.prevArrow {left: 200px;}
+.nextArrow {right: 200px;}
 /* 
-#section .slide-outer .arr {
+#main_section .slide-outer .arr {
     font-size: 70px;
     color: #fff;
     position: absolute;
@@ -76,28 +93,28 @@
     transition: all 0.5s;
 }
 
-#section .slide-outer .arr:hover {
+#main_section .slide-outer .arr:hover {
     opacity: 1;
 }
 
-#section .slide-outer .next {
+#main_section .slide-outer .next {
     right: 16%;
 }
 
-#section .slide-outer .prev {
+#main_section .slide-outer .prev {
     left: 16%;
 
 }
 
 
-#section .slide-outer .dot-box {
+#main_section .slide-outer .dot-box {
     position: absolute;
     bottom: 250px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-#section .slide-outer .dot-box > a {
+#main_section .slide-outer .dot-box > a {
     display: inline-block;
     width: 13px;
     height: 13px;
@@ -106,34 +123,34 @@
     opacity: 0.5;
     margin: 0 6px;
 }
-#section .slide-outer .dot-box > a.active {
+#main_section .slide-outer .dot-box > a.active {
     opacity: 1;
 } */
 
-#section .part1-wrap {
+#main_section .part1-wrap {
     padding: 100px 0;
 }
 
-#section .part1-wrap .board,
-#section .part1-wrap .board-video {
+#main_section .part1-wrap .board,
+#main_section .part1-wrap .board-video {
     display: inline-block;
 }
 
-#section .part1-wrap .board {
+#main_section .part1-wrap .board {
     margin: 20px 20px 20px 0;
 }
 
-#section .part1-wrap .tabTit {
+#main_section .part1-wrap .tabTit {
     position: relative;
 }
 
 
-#section .part1-wrap .tabTit ul li {
+#main_section .part1-wrap .tabTit ul li {
     float: left;
     height: 49px;
 }
 
-#section .part1-wrap .tabTit ul li a {
+#main_section .part1-wrap .tabTit ul li a {
     display: inline-block;
     width: 98px;
     padding: 14px 20px;
@@ -143,7 +160,7 @@
 
 }
 
-#section .part1-wrap .tabTit ul li a.on {
+#main_section .part1-wrap .tabTit ul li a.on {
     width: 98px;
     padding: 14px 20px;
     background: #fff;
@@ -152,28 +169,28 @@
     border-bottom: none;
 }
 
-#section .part1-wrap .tabTit ul li:nth-child(2) a {
+#main_section .part1-wrap .tabTit ul li:nth-child(2) a {
     border-left: none;
     
 }
 
-#section .part1-wrap .tabTit .more {
+#main_section .part1-wrap .tabTit .more {
     position: absolute;
     right: 0px;
     bottom: 0px;
 }
 
 
-#section .part1-wrap .tabTit .more a {
+#main_section .part1-wrap .tabTit .more a {
     display: inline-block;
     padding: 10px;
 }
-#section .part1-wrap .tabContainer {
+#main_section .part1-wrap .tabContainer {
     position: relative;
     width: 565px;
     height: 211px;
 }
-#section .part1-wrap .tabCont {
+#main_section .part1-wrap .tabCont {
     display: none;
     border: 1px solid #eaeaea;
     color: #999;
@@ -183,33 +200,33 @@
     top: 0;
     left: 0;
 }
-#section .part1-wrap .tabCont.on {
+#main_section .part1-wrap .tabCont.on {
     display: block;
 }
-#section .part1-wrap .tabCont colgroup col:nth-child(1) {
+#main_section .part1-wrap .tabCont colgroup col:nth-child(1) {
     width:75%
 }
 
-#section .part1-wrap .tabCont colgroup col:nth-child(2) {
+#main_section .part1-wrap .tabCont colgroup col:nth-child(2) {
     width: auto;
 }
 
-#section .part1-wrap .tabCont table tr {
+#main_section .part1-wrap .tabCont table tr {
     display: inline-block;
     padding: 12px 0;
 }
-#section .part1-wrap .tabCont table td {
+#main_section .part1-wrap .tabCont table td {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis 
 }
 
-#section .part1-wrap .tabCont table td:nth-child(2) {
+#main_section .part1-wrap .tabCont table td:nth-child(2) {
     padding-left: 25px;
 }
 
 
-#section .part2-wrap {
+#main_section .part2-wrap {
     position: relative;
     background: url(../images/galaxy.jpg) no-repeat center bottom;
     width: 100%;
@@ -218,7 +235,7 @@
     background-attachment: fixed;
 }
 
-#section .part2-wrap:before {
+#main_section .part2-wrap:before {
     content: '';
     position: absolute;
     top: 0;
@@ -231,7 +248,7 @@
     z-index: 9;
 }
 
-#section .part2-wrap .part2-text {
+#main_section .part2-wrap .part2-text {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -245,7 +262,7 @@
     letter-spacing: 7px;
     z-index: 99;
 }
-#section .part2-wrap button {
+#main_section .part2-wrap button {
     position: absolute;
     top: 65%;
     left: 50%;
@@ -261,30 +278,30 @@
     z-index: 99;
 }
 
-#section .part2-wrap button:hover {
+#main_section .part2-wrap button:hover {
     opacity: 1;
     background: #fff;
     transition: all 0.3s;
     color: #000;
 }
 
-#section .part3 {
+#main_section .part3 {
     padding: 150px 0;
     background-color: #f7f7f7;
     text-align: center;
 }
 /* 이미지 박스 */
-#section .part3 .box-wrap {
+#main_section .part3 .box-wrap {
     float: left;
 }
 
-#section .part3 .box-img {
+#main_section .part3 .box-img {
     width: 380px;
     height: 380px;
     position: relative;
 }
 
-#section .part3 .box-img:before {
+#main_section .part3 .box-img:before {
     content: '';
     position: absolute;
     top: 0;
@@ -296,7 +313,7 @@
     transition: ease-in-out 0.6s;
 }
 
-#section .part3 .box-img:after {
+#main_section .part3 .box-img:after {
     content: '';
     position: absolute;
     top: 100%;
@@ -308,30 +325,30 @@
     z-index: 99;
 }
 
-#section .part3 .box-img:nth-child(2):after {
+#main_section .part3 .box-img:nth-child(2):after {
     border-top: none;
     border-bottom: 25px solid #000;
     /* border 값만큼 top 마이너스 */
     top: -25px;
 }
 
-#section .part3 .box-img:hover:before {
+#main_section .part3 .box-img:hover:before {
     background: rgb(0, 0, 0);
 }
 
-#section .part3 .box-wrap:nth-child(1) .box-img {
+#main_section .part3 .box-wrap:nth-child(1) .box-img {
     background: url(../images/star1.jpg) no-repeat 50% 50%;
 }
 
-#section .part3 .box-wrap:nth-child(2) .box-img {
+#main_section .part3 .box-wrap:nth-child(2) .box-img {
     background: url(../images/star2.jpg) no-repeat 0% 20%;
 }
 
-#section .part3 .box-wrap:nth-child(3) .box-img {
+#main_section .part3 .box-wrap:nth-child(3) .box-img {
     background: url(../images/star3.jpg) no-repeat 50% 80%;
 }
 
-#section .part3 .box-img .text {
+#main_section .part3 .box-img .text {
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -345,33 +362,33 @@
     transition: ease-in-out 0.6s;
 }
 
-#section .part3 .box-img:hover .text {
+#main_section .part3 .box-img:hover .text {
     animation: 0.6s up both;
 }
 
-#section .part3 .box-img .text a {
+#main_section .part3 .box-img .text a {
     display: inline-block;
     padding: 18px;
     background: rgb(255, 255, 255);
     border-radius: 50%;
 }
 
-#section .part3 .box-img .text a:nth-child(1) {
+#main_section .part3 .box-img .text a:nth-child(1) {
     margin-right: 40px;
 }
 
 /* 텍스트 박스 */
-#section .part3 .box-text-wrap {
+#main_section .part3 .box-text-wrap {
     width: 380px;
     height: 380px;
     background-color: #fff;
 }
 
-#section .part3 .box-text-wrap {
+#main_section .part3 .box-text-wrap {
     position: relative;
 }
 
-#section .part3 .box-text-wrap .box-text {
+#main_section .part3 .box-text-wrap .box-text {
     width: 280px;
     position: absolute;
     top: 50%;
@@ -380,27 +397,27 @@
     text-align: left;
 }
 
-#section .part3 .box-text-wrap h3 {
+#main_section .part3 .box-text-wrap h3 {
     color: #424242;
     margin-bottom: 16px;
     text-transform: uppercase;
     border-bottom: 1px solid #999;
     padding-bottom: 15px;
 }
-#section .part3 .box-text-wrap p {
+#main_section .part3 .box-text-wrap p {
     line-height: 24px;
     font-size: 14px;
     color: #6c6c6c;
 }
 
-#section .part4 {
+#main_section .part4 {
     width: 100%;
     height: 280px;
     overflow: hidden;
     position: relative;
 }
 
-#section .part4 .vid:before {
+#main_section .part4 .vid:before {
     content: '';
     background:  rgba(255, 255, 255, 0.3);
     position: absolute;
@@ -411,7 +428,7 @@
     z-index: 9;
 } 
 
-#section .part4 video {
+#main_section .part4 video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -419,7 +436,7 @@
     width: 100%;
 }
 
-#section .part4 div {
+#main_section .part4 div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -434,19 +451,19 @@
     cursor: default;
 }
 
-#section .part5 {
+#main_section .part5 {
     text-align: center;
     padding: 130px 0;
     text-transform: capitalize;
 }
 
-#section .part5 > h3 {
+#main_section .part5 > h3 {
     color: #555;
     font-size: 12px;
     text-transform: uppercase;
     margin-bottom: 0px;
 }
-#section .part5 > p {
+#main_section .part5 > p {
     font-size: 25px;
     color: #252525;
     margin-bottom: 50px;
@@ -454,32 +471,32 @@
     
 }
 
-#section .part5 .part5-box {
+#main_section .part5 .part5-box {
     position: relative;
     display: inline-block;
     width: 25%;
     margin: 0 4%;
 }
 
-#section .part5 .part5-box i {
+#main_section .part5 .part5-box i {
     font-size: 60px;
     color: #999;
     margin-bottom: 20px;
 }
 
 
-#section .part5 .part5-box span {
+#main_section .part5 .part5-box span {
     display: block;
     font-size: 18px;
     color: #555;
     margin-bottom: 15px;
 }
-#section .part5 .part5-box p {
+#main_section .part5 .part5-box p {
     color: #aaa;
     font-size: 14px;
 }
 
-#section .part5 .part5-box:before {
+#main_section .part5 .part5-box:before {
     content: '';
     position: absolute;
     top: 0;
@@ -490,11 +507,11 @@
     transition: ease-in-out 0.5s;
 }
 
-#section .part5 .part5-box:hover:before {
+#main_section .part5 .part5-box:hover:before {
     right: 0;
 }
 
-#section .part5 .part5-box:after {
+#main_section .part5 .part5-box:after {
     content: '';
     position: absolute;
     top: 0;
@@ -505,16 +522,16 @@
     transition: ease-in-out 0.5s;
 }
 
-#section .part5 .part5-box:hover:after {
+#main_section .part5 .part5-box:hover:after {
     bottom: 0;
 }
 
-#section .part5 .part5-box-inner {
+#main_section .part5 .part5-box-inner {
     position: relative;
     padding: 40px 20px;
 }
 
-#section .part5 .part5-box-inner:before {
+#main_section .part5 .part5-box-inner:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -525,11 +542,11 @@
     transition: ease-in-out 0.5s;
 }
 
-#section .part5 .part5-box-inner:hover:before {
+#main_section .part5 .part5-box-inner:hover:before {
     top: 0;
 }
 
-#section .part5 .part5-box-inner:after {
+#main_section .part5 .part5-box-inner:after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -540,6 +557,6 @@
     transition: ease-in-out 0.5s;
 }
 
-#section .part5 .part5-box-inner:hover:after {
+#main_section .part5 .part5-box-inner:hover:after {
     left: 0;
 }

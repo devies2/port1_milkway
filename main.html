@@ -1,20 +1,20 @@
 <div id="container">
-    <section id="section">
+    <section id="main_section">
         <article class="main_bg">
             <div class="slide-outer">
                 <div class="slide-inner">
                     <!-- 슬라이드 이미지 삽입 -->
                     <div class="slide slide1">
-                        <div class="main-text blind">Flowing milky way</div>
+                        <div class="main-text">Flowing milky way</div>
                     </div>
-                    <div class="slide slide2>
-                        <div class="main-text blind">Under the stars</div>
+                    <div class="slide slide2">
+                        <div class="main-text">Under the stars</div>
                     </div>
-                    <div class="slide slide3>
+                    <div class="slide slide3">
                         <div class="main-text">Twinkle night</div>
                     </div>
                 </div>
-                <div class="arr prev">
+                <!-- <div class="arr prev">
                     <i class="fas fa-chevron-left"></i>
                 </div>
                 <div class="arr next">
@@ -36,7 +36,7 @@
                             3
                         </span>
                     </a>
-                </div>
+                </div> -->
             </div>
         </article>
         <article class="part1 row">
@@ -58,19 +58,23 @@
                                         <col>
                                     </colgroup>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </td>
                                         <td>2222-22-22</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </td>
                                         <td>2222-22-22</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </td>
                                         <td>2222-22-22</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </td>
                                         <td>2222-22-22</td>
                                     </tr>
                                 </table>
@@ -84,19 +88,23 @@
                                         <col>
                                     </colgroup>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </td>
                                         <td>2222-22-22</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </td>
                                         <td>2222-22-22</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </td>
                                         <td>2222-22-22</td>
                                     </tr>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></td>
+                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        </td>
                                         <td>2222-22-22</td>
                                     </tr>
                                 </table>
@@ -247,13 +255,17 @@
                 // arrows : true, 		// 옆으로 이동하는 화살표 표시 여부
                 // dots : true, 		// 스크롤바 아래 점으로 페이지네이션 여부
                 autoplay: true, // 자동 스크롤 사용 여부
-                autoplaySpeed: 600, // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+                autoplaySpeed: 1000, // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
                 pauseOnHover: true, // 슬라이드 이동	시 마우스 호버하면 슬라이더 멈추게 설정
                 vertical: false, // 세로 방향 슬라이드 옵션
-                prevArrow: false, // 이전 화살표 모양 설정
-                nextArrow: false, // 다음 화살표 모양 설정
+                // prevArrow: false, // 이전 화살표 모양 설정
+                // nextArrow: false, // 다음 화살표 모양 설정
+                prevArrow: '<button class="prevArrow marrow"><i class="fas fa-angle-left"></i></button>',
+                nextArrow: '<button class="nextArrow marrow"><i class="fas fa-angle-right"></i></button>',
+
                 dotsClass: "slick-dots", //아래 나오는 페이지네이션(점) css class 지정
                 draggable: true, //드래그 가능 여부 
+                // 버튼 태그 삽입하기!
 
             });
         })
