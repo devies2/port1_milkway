@@ -20,7 +20,7 @@
     width: 100%;
 }
 
-#section  .slide-inner  div:nth-child(1) {
+#section  .slide-inner  .slide1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,7 +30,7 @@
     height: 1080px; 
 
 }
-#section  .slide-inner  div:nth-child(2) {
+#section  .slide-inner .slide2 {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@
     height: 1080px; 
 }
 
-#section  .slide-inner  div:nth-child(3) {
+#section  .slide-inner  .slide3 {
     position: absolute;
     top: 0;
     left: 0;
