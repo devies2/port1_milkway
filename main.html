@@ -58,7 +58,7 @@
                                         <col>
                                     </colgroup>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        <td><a href="#">1 Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                                         </td>
                                         <td>2222-22-22</td>
                                     </tr>
@@ -88,7 +88,7 @@
                                         <col>
                                     </colgroup>
                                     <tr>
-                                        <td><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                                        <td><a href="#">2 Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                                         </td>
                                         <td>2222-22-22</td>
                                     </tr>
@@ -268,6 +268,15 @@
                 // 버튼 태그 삽입하기!
 
             });
+        })
+
+        $('.tabTit a').on('click',function(e){
+            e.preventDefault();
+            console.log($(this).parent().index());
+            var ind = $(this).parent().index();
+            console.log(ind);
+            $('.tabCont').eq(ind).siblings().removeClass('on');
+            $('.tabCont').eq(ind).addClass('on');
         })
     })(jQuery)
 </script>

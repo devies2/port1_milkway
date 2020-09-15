@@ -36,7 +36,10 @@ input[type=button]
 legend {display: none;}
 
 .cf:after, .cf:before {content: ''; display: block; clear: both;}
-.blind {width: 0; height: 0; text-indent: -9999; font-size: 0; overflow: hidden; line-height: 0;}
+.blind {
+    width: 0; height: 0; 
+    /* text-indent: -9999;  */
+    font-size: 0; overflow: hidden; line-height: 0;}
 /* 말 줄임표 */
 .ellipsis {
     white-space: nowrap;
