@@ -142,7 +142,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="box-text-wrap">
+                    <div class="box-text-wrap on">
                         <div class="box-text">
                             <h3>LOREM</h3>
                             <p>
@@ -245,6 +245,9 @@
 
 <script>
     (function ($) {
+        $('html,body').animate({
+            scrollTop: '0'
+        }, 800)
         $(function () {
             $('.slide-inner').slick({
                 slide: 'div', //슬라이드 되어야 할 태그 ex) div, li 
@@ -269,8 +272,8 @@
 
             });
         })
-
-        $('.tabTit a').on('click',function(e){
+        // 탭메뉴
+        $('.tabTit a').on('click', function (e) {
             e.preventDefault();
             console.log($(this).parent().index());
             var ind = $(this).parent().index();
@@ -278,5 +281,7 @@
             $('.tabCont').eq(ind).siblings().removeClass('on');
             $('.tabCont').eq(ind).addClass('on');
         })
+
+
     })(jQuery)
 </script>
