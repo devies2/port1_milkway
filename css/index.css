@@ -160,7 +160,7 @@
 
 }
 
-#main_section .part1-wrap .tabTit ul li a.on {
+#main_section .part1-wrap .tabTit ul li.on a {
     width: 98px;
     padding: 14px 20px;
     background: #fff;
@@ -174,10 +174,11 @@
     
 }
 
-#main_section .part1-wrap .tabTit .more {
+#main_section .part1-wrap .tabTit .more a {
     position: absolute;
     right: 0px;
-    bottom: 0px;
+    top: -30px;
+    background: rebeccapurple;
 }
 
 

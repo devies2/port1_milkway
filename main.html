@@ -44,10 +44,10 @@
                 <div class="board">
                     <div class="tabTit cf">
                         <ul class="cf">
-                            <li><a href="#" class="on">NOTICE</a></li>
+                            <li class="on"><a href="#" >NOTICE</a></li>
                             <li><a href="#" class="">Q &amp; A</a></li>
                         </ul>
-                        <span class="more"><a href="#">more&nbsp;&nbsp;&nbsp;+</a></span>
+                       
                     </div>
                     <div class="tabContainer">
                         <div class="tabCont on">
@@ -79,6 +79,7 @@
                                     </tr>
                                 </table>
                             </div>
+                            <span class="more"><a href="./notice.html">more&nbsp;&nbsp;&nbsp;+</a></span>
                         </div>
                         <div class="tabCont">
                             <div>
@@ -109,6 +110,7 @@
                                     </tr>
                                 </table>
                             </div>
+                            <span class="more"><a href="#">more&nbsp;&nbsp;&nbsp;+</a></span>
                         </div>
                     </div>
                 </div>
@@ -275,6 +277,8 @@
         // 탭메뉴
         $('.tabTit a').on('click', function (e) {
             e.preventDefault();
+            $(this).parent().siblings().removeClass('on');
+            $(this).parent().addClass('on');
             console.log($(this).parent().index());
             var ind = $(this).parent().index();
             console.log(ind);
