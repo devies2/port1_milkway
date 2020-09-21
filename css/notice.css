@@ -39,24 +39,22 @@ input[type='submit'] {
 
 }
 
-/* .noticeTable td {
+#noticeTable td {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-} */
-.noticeTable {
+}
+#noticeTable {
     margin-top: 20px;
-
 }
 
-table {width: 800px; margin: 0 auto;}
-col:nth-of-type(1) {width: 10%;}
-col:nth-child(2) {width: 45%;}
-col:nth-child(3) {width: 15%;}
-col:nth-child(4) {width: 15%;}
-col:nth-child(5) {width: 15%;}
- th, 
-td {
+#noticeTable table {width: 800px; margin: 0 auto;}
+#noticeTable col:nth-of-type(1) {width: 10%;}
+#noticeTable col:nth-child(2) {width: 45%;}
+#noticeTable col:nth-child(3) {width: 15%;}
+#noticeTable col:nth-child(4) {width: 15%;}
+#noticeTable col:nth-child(5) {width: 15%;}
+#noticeTable th, #noticeTable td {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px;
