@@ -44,10 +44,10 @@
                 <div class="board">
                     <div class="tabTit cf">
                         <ul class="cf">
-                            <li class="on"><a href="#" >NOTICE</a></li>
+                            <li class="on"><a href="#">NOTICE</a></li>
                             <li><a href="#" class="">Q &amp; A</a></li>
                         </ul>
-                       
+
                     </div>
                     <div class="tabContainer">
                         <div class="tabCont on">
@@ -144,7 +144,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="box-text-wrap on">
+                    <div class="box-text-wrap">
                         <div class="box-text">
                             <h3>LOREM</h3>
                             <p>
@@ -284,8 +284,39 @@
             console.log(ind);
             $('.tabCont').eq(ind).siblings().removeClass('on');
             $('.tabCont').eq(ind).addClass('on');
-        })
+        }) 
+        
+        // $(window).scroll(function () {
+        //     var sct = $(this).scrollTop()
 
 
+        //     // 스크롤 했을 때 사업영역
+        //     var busiNear = $('.business').offset().top - $(this).height() / 2
+        //     if (sct >= busiNear) {
+        //         $('.business ul > li').addClass('on')
+        //     } else if (sct === 0) {
+        //         $('.business ul > li').removeClass('on')
+        //     }
+
+
+        // })
+
+        $(window).scroll(function () {
+                // 스크롤 했을 때 진행프로젝트 영역
+                var sct = $(this).scrollTop();
+                var part3Box = $('.part3').offset().top - $(this).height() / 2
+                // var notNear = $('.part3').offset().top - $(this).height()/1
+                if (sct >= part3Box) {
+                    $('.box-img').addClass('on')
+                    $('.box-text-wrap').addClass('on')
+                    // console.log('여기까지')
+                } else if (sct <= part3Box-450) {
+                    $('.box-img').removeClass('on')
+                    $('.box-text-wrap').removeClass('on')
+                    // console.log('여기까지2')
+
+                }
+
+            })
     })(jQuery)
 </script>
