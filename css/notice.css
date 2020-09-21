@@ -5,29 +5,37 @@
 .row { width: 1000px;}
 .noticePage {
     padding: 136px 0;
+    text-align: center;
 }
 
 .noticePage h2 {
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     margin: 20px 0;
+    padding: 30px 0;
 }
 
-.sbox {
+#sbox {
+    height: 30px;
+    border: 1px solid #ddd;
+    width: 70px;
     text-align: center;
 }
 
-.sbox select {
-    height: 30px;
-}
-
-.sbox input[type=text] {
+#keyword {
     height: 30px; width: 300px; text-indent: 1em;
     vertical-align: middle;
+    border: 1px solid #ddd;
 }
-.sbox input[type=submit] {height: 30px; background: #ddd;
-    padding: 0 8px; border-radius: 5px;
+input[type='submit'] {
+    height: 30px; 
+    /* background: #ddd; */
+    padding: 0 13px; 
+    border-radius: 2px;
     vertical-align: middle;
+    color: #fff;
+    background: #000;
+    font-weight: bold;
 
 }
 
@@ -38,55 +46,54 @@
 } */
 .noticeTable {
     margin-top: 20px;
+
 }
-.noticeTable col:nth-child(1) {width: 5%;}
-.noticeTable col:nth-child(1) {width: auto;}
-.noticeTable col:nth-child(1) {width: 13%;}
-.noticeTable col:nth-child(1) {width: 13%;}
-.noticeTable col:nth-child(1) {width: 5%;}
-.noticePage table {border: none; font-size: 14px;}
-.noticePage th, 
-.noticePage td {
+
+table {width: 800px; margin: 0 auto;}
+col:nth-of-type(1) {width: 10%;}
+col:nth-child(2) {width: 45%;}
+col:nth-child(3) {width: 15%;}
+col:nth-child(4) {width: 15%;}
+col:nth-child(5) {width: 15%;}
+ th, 
+td {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    padding: 5px;
+    padding: 10px;
 }
 
-.noticeTable tbody td:nth-child(1),
-.noticeTable tbody td:nth-child(3),
-.noticeTable tbody td:nth-child(4),
-.noticeTable tbody td:nth-child(5) {
-    text-align: center;
-}
-
-.noticeTable th {
+th {
     background: #f2f2f2;
     border-top: 1px solid #999;
+    font-weight: bold;
 }
 
-.noticeTable tbody tr:hover {
+tbody tr:hover {
     background: #f2f2f2;
 }
 
-.noticePage .numlist {
+.numlist {
     text-align: center;
-    margin: 20px 0;
+    margin: 40px 0;
     font-size: 16px;
 }
 
-.noticePage .numlist span {
-    background: #ddd; padding: 5px; display: inline-block;
-}
-.noticePage .numlist a {
+.numlist span {
+    padding: 0px 20px; 
     display: inline-block;
-    padding: 5px;
-    border: 1px solid #ddd;
+    font-size: 20px;
+    color: #555;
+}
+.numlist a {
+    display: inline-block;
+    padding: 5px 11px;
+    border: 1px solid #eee;
 }
 
 .noticePage .numlist a:hover {
-    background: #ddd;
+    background: #eee;
 }
 
 .noticePage .numlist a.on {
-    background: #ddd;
+    background: #eee;
 }
