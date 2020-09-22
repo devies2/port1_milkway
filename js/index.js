@@ -15,8 +15,8 @@ $(function($){
 
         $('.depth1 >li').on('mouseleave',function(){
             console.log('실행')
-            $(this).find('.depth2').hide(700);
-            $(this).find('.detail').hide(700);
+            $(this).find('.depth2').slideUp(700);
+            $(this).find('.detail').slideUp(700);
         })
 
 })(jQuery)
