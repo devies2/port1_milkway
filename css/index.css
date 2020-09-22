@@ -201,7 +201,7 @@
 }
 .tabContainer tr {
     width: 450px;
-    background: black;
+    /* background: black; */
 }
 .tabContainer td:nth-of-type(1) {
     width: 200px;
@@ -566,6 +566,19 @@
     display: inline-block;
     width: 25%;
     margin: 0 4%;
+    -webkit-transform: rotate3d(0, 0, 1, -200deg);
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+}
+
+#main_section .part5 .part5-box:nth-of-type(1).on {
+    animation: 1s 0.5s rotateIn both;
+}
+#main_section .part5 .part5-box:nth-of-type(2).on {
+    animation: 1s 0.7s rotateIn both;
+}
+#main_section .part5 .part5-box:nth-of-type(3).on {
+    animation: 1s 0.9s rotateIn both;
 }
 
 #main_section .part5 .part5-box i {
