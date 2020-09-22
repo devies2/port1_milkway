@@ -250,6 +250,9 @@
         $('html,body').animate({
             scrollTop: '0'
         }, 800)
+        // .logo_nav #nav > ul > li:hover > .depth2 
+
+
         $(function () {
             $('.slide-inner').slick({
                 slide: 'div', //슬라이드 되어야 할 태그 ex) div, li 
@@ -286,37 +289,7 @@
             $('.tabCont').eq(ind).addClass('on');
         }) 
         
-        // $(window).scroll(function () {
-        //     var sct = $(this).scrollTop()
 
-
-        //     // 스크롤 했을 때 사업영역
-        //     var busiNear = $('.business').offset().top - $(this).height() / 2
-        //     if (sct >= busiNear) {
-        //         $('.business ul > li').addClass('on')
-        //     } else if (sct === 0) {
-        //         $('.business ul > li').removeClass('on')
-        //     }
-
-
-        // })
-
-        $(window).scroll(function () {
-                // 스크롤 했을 때 진행프로젝트 영역
-                var sct = $(this).scrollTop();
-                var part3Box = $('.part3').offset().top - $(this).height() / 2
-                // var notNear = $('.part3').offset().top - $(this).height()/1
-                if (sct >= part3Box) {
-                    $('.box-img').addClass('on')
-                    $('.box-text-wrap').addClass('on')
-                    // console.log('여기까지')
-                } else if (sct <= part3Box-450) {
-                    $('.box-img').removeClass('on')
-                    $('.box-text-wrap').removeClass('on')
-                    // console.log('여기까지2')
-
-                }
-
-            })
+       
     })(jQuery)
 </script>
