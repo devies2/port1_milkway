@@ -59,28 +59,30 @@
     font-family: 'Nanum Pen Script', cursive;
     text-transform: capitalize;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: 2s 1s fadeIn both,  1.2s 2s infinite twinkle;
     cursor: default;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
+    text-align: center;
 }
-
+#main_section .slide-inner .slick-active .main-text {
+    animation: 2.6s fadeIn infinite,  1.2s 2s infinite twinkle;
+}
 .marrow {
     width: 20px;
     height: 20px;
     /* background: red; */
     color: #fff;
     position: absolute;
-    top: 40%;
+    top: 50%;
     /* bottom: 0; */
     transform: translateY(-50%);
     z-index: 999;
     font-size: 50px;
 }
-.prevArrow {left: 200px;}
-.nextArrow {right: 200px;}
+.prevArrow {left: 17%;}
+.nextArrow {right: 17%;}
 /* 
 #main_section .slide-outer .arr {
     font-size: 70px;
@@ -137,7 +139,6 @@
 }
 #main_section .part1-wrap .board-video {
     display: inline-block;
-    
     width: 500px;
 }
 
@@ -293,12 +294,14 @@
     text-transform: capitalize;
     animation: 1s twinkle infinite;
     cursor: default;
-    letter-spacing: 7px;
+    letter-spacing: 2px;
     z-index: 99;
+    text-align: center;
+    line-height: 1.3em;
 }
 #main_section .part2-wrap button {
     position: absolute;
-    top: 65%;
+    bottom: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 1px solid #fff;
@@ -505,6 +508,8 @@
     height: 280px;
     overflow: hidden;
     position: relative;
+    text-align: center;
+ 
 }
 
 #main_section .part4 .vid:before {
@@ -533,12 +538,13 @@
     transform: translate(-50%, -50%);
     color: #fff;
     font-size: 35px;
-    letter-spacing: 15px;
+    letter-spacing: 9px;
     text-transform: capitalize;
     text-shadow: 0 0 3px black;
     z-index: 99;
     animation: 1s twinkle infinite;
     cursor: default;
+    line-height: 1.5em;
 }
 
 #main_section .part5 {
@@ -564,8 +570,9 @@
 #main_section .part5 .part5-box {
     position: relative;
     display: inline-block;
-    width: 25%;
-    margin: 0 4%;
+    /* width: 25%; */
+    width: 250px;
+    margin: 20px 4%;
     -webkit-transform: rotate3d(0, 0, 1, -200deg);
     transform: rotate3d(0, 0, 1, -200deg);
     opacity: 0;

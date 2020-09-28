@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/way.css">
     <link rel="stylesheet" href="./css/notice.css">
     <link rel="stylesheet" href="./css/goods.css">
+    <link rel="stylesheet" href="./css/rwd.css">
     <!-- 플러그인, 공통 js파일 -->
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery-migrate-1.4.1.min.js"></script>
@@ -93,6 +94,10 @@
                     </div>
                 </a>
             </h1>
+            <div class="open_nav">
+                <span class="blind">메뉴열기</span>
+                <i class="fas fa-bars"></i>
+            </div>
             <nav id="nav">
                 <ul class="depth1">
                     <li>
@@ -105,9 +110,8 @@
                     <li>
                         <a href="#">BUSINESS</a>
                         <ul class="depth2">
-                            <li><a href="#">Introduction</a></li>
-                            <li><a href="#">Introduction</a></li>
-                            <li><a href="#">Introduction</a></li>
+                            <li><a href="#">Locals</a></li>
+                            <li><a href="#">Locals</a></li>
                         </ul>
                     </li>
                     <li>
@@ -234,7 +238,11 @@
                     </li>
                 </ul>
             </nav>
-        <!-- </div> -->
+            <div class="close_nav">
+                <span class="blind">메뉴닫기</span>
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
     </header>
     <div id="containerBox"></div>
 
@@ -285,7 +293,7 @@
                                 <option value="pageA">pageA</option>
                                 <option value="pageB">pageB</option>
                             </select>
-                            <button type="submit">Move</button>
+                            <!-- <button type="submit">Move</button> -->
                         </fieldset>
                     </form>
                     <p>
