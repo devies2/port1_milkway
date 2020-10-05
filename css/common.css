@@ -282,10 +282,12 @@ font-family: 'Nanum Pen Script', cursive; */
 .logo_nav #nav > ul > li > .depth2 {
     display: none;
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
     right: 0;
-    padding: 60px 0 30px;
+    padding: 0px;
+    padding-bottom: 20px;
+
     background-color: rgba(0,0,0,1);
     border-radius: 5px;
 }

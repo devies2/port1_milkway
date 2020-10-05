@@ -36,14 +36,14 @@ $(function($){
             // console.log('실행')
             // if($('html').hasClass('pc')){
               $(this).find('.depth2').stop().slideDown(300);
-              $(this).find('.detail').stop().slideDown(300);
+              $(this).find('.detail').stop().slideDown(100);
             // }
         })
 
         $('.depth1 >li').on('mouseleave',function(){
             // console.log('실행')
             // if($('html').hasClass('pc')){
-              $(this).find('.depth2').stop().slideUp(700);
+              $(this).find('.depth2').stop().slideUp(300);
               $(this).find('.detail').stop().slideUp(700);
             // }
         })
@@ -62,7 +62,7 @@ $(function($){
             // })
             $(this).siblings().each(function(){
               if($(this).css('display') === 'block'){
-                $(this).find('.depth2').stop().slideUp(300)
+                $(this).find('.depth2').stop().slideUp(100)
                 // $(this).removeClass('on')
                 // ㄴ이 this는 siblings 각각을 의미
               }

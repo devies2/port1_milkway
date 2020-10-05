@@ -4,7 +4,7 @@
 /* max-width:680px */
 @media screen and (max-width: 1024px) {
     .row {
-        width: 680px;
+        max-width: 680px;
     }
 
     .logo_nav #nav>ul>li>a {
@@ -69,7 +69,7 @@
 
 @media screen and (max-width: 680px) {
     .row {
-        width: 340px;
+        max-width: 340px;
         margin: 0 auto;
     }
 
@@ -133,7 +133,7 @@
         left: 0;
         right: 0;
         /* padding: 10px 0 10px; */
-        padding: 20px;
+        padding: 0px;
         /* background-color: rgba(0,0,0,0.5); */
         background-color: white;
         border-radius: 5px;
