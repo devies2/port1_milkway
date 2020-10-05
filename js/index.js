@@ -33,7 +33,7 @@ $(function($){
         }
 
         $('.depth1 >li').on('mouseenter',function(){
-            console.log('실행')
+            // console.log('실행')
             // if($('html').hasClass('pc')){
               $(this).find('.depth2').stop().slideDown(300);
               $(this).find('.detail').stop().slideDown(300);
@@ -41,7 +41,7 @@ $(function($){
         })
 
         $('.depth1 >li').on('mouseleave',function(){
-            console.log('실행')
+            // console.log('실행')
             // if($('html').hasClass('pc')){
               $(this).find('.depth2').stop().slideUp(700);
               $(this).find('.detail').stop().slideUp(700);
