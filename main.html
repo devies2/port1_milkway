@@ -274,7 +274,13 @@
                 dotsClass: "slick-dots", //아래 나오는 페이지네이션(점) css class 지정
                 draggable: true, //드래그 가능 여부 
                 // 버튼 태그 삽입하기!
-
+                responsive: [{
+                // w가 1024부터 화살표를 없앤다
+                breakpoint: 1025, //1px 작게 적용된데, 즉 1024부터 적용된다고...
+                settings: {
+                    arrows: false, 
+                }
+            }]
             });
         })
         // 탭메뉴
