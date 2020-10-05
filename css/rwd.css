@@ -82,10 +82,10 @@
         position: absolute;
         top: 100%;
         right: 0;
-        transform: translateY(-50%);
+        transform: translateY(0%);
         color: #fff;
         /* 임시로 맞춰둔 margin-top값 */
-        margin-top: 135px;
+        margin-top: 0px;
         background: rgba(0, 0, 0, 0.9);
         padding: 0 20px 20px;
         /* none 처리후 js 처리 */

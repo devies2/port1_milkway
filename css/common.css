@@ -206,6 +206,7 @@ font-family: 'Nanum Pen Script', cursive; */
 
 /* 스크롤 내릴때 */
 .logo_nav h1 div {
+    display: inline-block;
     height: 60px;
     animation: 0.8s logo infinite;
     background-size: contain;
@@ -213,7 +214,9 @@ font-family: 'Nanum Pen Script', cursive; */
     background-position: 0 0;
     margin-top: 0px;
     width: 250px;
+
 }
+
 
 .logo_nav #nav {
     position: absolute; top: 50%; right: 0; transform: translateY(-50%);
@@ -310,7 +313,7 @@ font-family: 'Nanum Pen Script', cursive; */
     font-weight: 900;
     position: absolute;
     top: 55%;
-    left: 13px;
+    left: 12px;
     font-size: 14px;
     transform: translateY(-50%);
 }
