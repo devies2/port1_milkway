@@ -242,6 +242,38 @@
     .logo_nav #nav ul li .detail2>li:last-child a {
         margin-bottom: 10px;
     }
+
+    #main_section .part1-wrap .tabContainer {
+        position: relative;
+        width: 300px;
+        height: 211px;
+    }
+    
+    #main_section .part1-wrap .tabCont {
+        display: none;
+        border: 1px solid #eaeaea;
+        color: #999;
+        padding: 20px;
+        width: 300px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #main_section .part1-wrap .board {
+        display: block;
+        width: 300px;
+        margin: 0 auto 70px;
+
+    }
+
+    #main_section .part1-wrap .board-video {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+    #main_section .part1-wrap iframe {
+        width: 300px;
+    }
     #main_section .part2-wrap button {
         position: absolute;
         bottom: 7%;
@@ -257,6 +289,7 @@
         color: white;
         z-index: 99;
     }
+    
     .footer-mid {
         background: rgb(46, 46, 46);
         padding: 20px 0;

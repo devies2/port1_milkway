@@ -11,7 +11,7 @@ $(function($){
 
         init();
         flag = true;
-        init();
+        // init();
 
         $(window).on('resize',function(){
           init()
@@ -19,16 +19,21 @@ $(function($){
       
         function init(){
           var ww =$(window).width();
-          if(ww>680&& flag ){
-            $('#nav').show()
-            $('.open_nav i, .close_nav i, .depth2').hide()
+          if(ww>680){
             $('html').addClass('pc').removeClass('mobile')
-            flag = false
-          } else if(ww<=680 && !flag){
+            if(flag){
+              $('#nav').show()
+              $('.open_nav i, .close_nav i, .depth2').hide()
+              flag = false
+            }
+          } else if(ww<=680){
+            $('html').removeClass('pc').addClass('mobile')
+            if(!flag){
               $('#nav').hide()
             $('.open_nav i').show()
-            $('html').removeClass('pc').addClass('mobile')
             flag = true
+
+            }
           }
         }
 
