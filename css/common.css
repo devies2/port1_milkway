@@ -495,7 +495,9 @@ font-family: 'Nanum Pen Script', cursive; */
     padding: 0;
     margin-bottom: 10px;
 }
-
+.footer-mid .footer-right form span.fam {
+    font-size: 16px;
+}
 .footer-mid .footer-right form button {
     padding: 1px 10px;
     border-radius: 3px;
@@ -540,8 +542,9 @@ font-family: 'Nanum Pen Script', cursive; */
 
 .loader i {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
     font-size: 40px;
 }
