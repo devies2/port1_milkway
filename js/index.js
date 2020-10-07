@@ -1,4 +1,4 @@
-$(function($){
+(function($){
         // $('.tabTit a').on('click',function(e){
         //     e.preventDefault();
         //     console.log($(this).index());
@@ -8,35 +8,31 @@ $(function($){
         //     $('.tabCont').eq(ind).addClass('on');
         // })
         var flag;
-
-        init();
         flag = true;
-        // init();
-
-        $(window).on('resize',function(){
-          init()
-        })
-      
+        init();
+        
         function init(){
           var ww =$(window).width();
           if(ww>680){
             $('html').addClass('pc').removeClass('mobile')
             if(flag){
               $('#nav').show()
-              $('.open_nav i, .close_nav i, .depth2').hide()
+              $('.open_nav, .close_nav, .depth2').hide()
               flag = false
             }
           } else if(ww<=680){
             $('html').removeClass('pc').addClass('mobile')
             if(!flag){
               $('#nav').hide()
-            $('.open_nav i').show()
+            $('.open_nav').show()
             flag = true
 
             }
           }
         }
-
+        $(window).on('resize',function(){
+          init()
+        })
         $('.depth1 >li').on('mouseenter',function(){
             // console.log('실행')
             // if($('html').hasClass('pc')){

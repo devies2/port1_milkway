@@ -190,9 +190,11 @@ font-family: 'Nanum Pen Script', cursive; */
     top: 50%;
     right: 5%;
     color: #fff;
+    display:none; 
+
 }
 .logo_nav .close_nav i {
-    display: none;
+    /* display: none; */
 }
 /* 스크롤 올릴때 */
 /* .logo_nav h1 div {
