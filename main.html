@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div class="board-video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/8iU8LPEa4o0" frameborder="0"
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8iU8LPEa4o0" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
@@ -316,6 +316,28 @@
         $('#container').remove();
         $('#containerBox').load(url);
     })
-       
+    
+    
+    // 모바일일때 이미지 순서 바꾸는 함수
+    var flagMain = true;
+    initMain()
+    function initMain() {
+        if ( $('html').hasClass('mobile') && flagMain ) {
+            $('.box-wrap:nth-child(2) > .box-text-wrap').appendTo('.box-wrap:nth-child(2)')
+            flagMain = false
+        } else if ($('html').hasClass('pc') && !flagMain ) {
+            $('.box-wrap:nth-child(2) > .box-text-wrap').prependTo('.box-wrap:nth-child(2)')
+            flagMain = true
+        }
+    }
+
+    $(window).resize(function(){
+        initMain()
+    })
+    
+
+
+
     })(jQuery)
 </script>
+

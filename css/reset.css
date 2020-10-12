@@ -16,7 +16,7 @@ table {border-collapse: collapse; width: 100%; table-layout: fixed;}
 /* white-space: nowrap; overflow: hidden; text-overflow: ellipsis */
 img {
     /* 이미지는 필요할 때 판단해서 w:100% 설정할 것 */
-    /* max-width: 100%;  */
+    max-width: 100%; 
     vertical-align: middle; 
     /* > img 아래에 1px의 빈틈 생기는 것을 막기위해 */
     border: none;

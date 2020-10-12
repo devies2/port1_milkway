@@ -18,13 +18,12 @@
     text-align: center;
 }
 .icon-map {
-    /* margin: 0 auto;
-    text-align: center; */
-    margin-bottom: 50px;
+    width: 80%;
+    margin: 50px auto;
 }
 .icon-map li {
     float: left;
-    margin: 50px 100px 0;
+    margin: 0 100px 30px 100px;
     /* margin-right: 250px; */
 }
 .icon-map li span {
@@ -33,4 +32,16 @@
 }
 .icon-map li p {
     margin-top: 10px;
+}
+
+@media screen and (max-width: 680px){
+    .map_main iframe {
+        width: 100%;
+    }
+    .icon-map li {
+        float: none;
+        margin: 0 0 30px 30px;
+        /* margin-right: 250px; */
+        text-align: left;
+    }
 }

@@ -4,6 +4,73 @@
     })
     $('#containerBox').load('main.html');
     
+
+    var flagInit = true;
+        init();
+        function init(){
+          var ww =$(window).width();
+          if(ww>680){
+            $('html').addClass('pc').removeClass('mobile')
+            if(flagInit){
+              $('#nav').show()
+              $('.open_nav, .close_nav, .depth2').hide()
+              flagInit = false
+            }
+          } else if(ww<=680){
+            $('html').removeClass('pc').addClass('mobile')
+            if(!flagInit){
+              $('#nav').hide()
+              $('.open_nav').show()
+              flagInit = true
+            }
+          }
+        }
+
+        $(window).on('resize',function(){
+          init()
+        })
+
+
+        $('.depth1 >li').on('mouseenter',function(){
+            if($('html').hasClass('pc')){
+              $(this).find('ul').stop().slideDown(300);
+            }
+        })
+
+        $('.depth1 >li').on('mouseleave',function(){
+            if($('html').hasClass('pc')){
+              $(this).find('.depth2').stop().slideUp(300);
+              $(this).find('.detail').stop().slideUp(100);
+            }
+        })
+       
+        $(".depth1 > li > a").on('click', function(){
+          if( $('html').hasClass('mobile') ){
+            $(this).next().stop().slideToggle(300)
+            $(this).parent().siblings().each(function(){
+              if( $(this).find('.depth2').css('display') === 'block') {
+                  $(this).find('.depth2').stop().slideUp(100)
+              }
+            })
+          }
+        })
+        
+        $('.open_nav').on('click', function(){
+            $(this).next().stop().show()
+            $(this).hide();
+            $('.close_nav').show();
+        })
+      
+        $('.close_nav').on('click', function(){
+            $(this).prev().stop().hide()
+            $('.open_nav').show();
+            $(this).hide();
+            $('.depth2').hide();
+        })
+      
+
+
+
     $('.link-set a').on('click', function(e){
         e.preventDefault();
         var url = $(this).attr('href');
@@ -11,13 +78,10 @@
         $('#containerBox').load(url);
     })
 
-    $('.depth1 a').on('click', function(e){
-        e.preventDefault();
-        var url = $(this).attr('href');
-        console.log(url);
+    $('#nav .depth1 li').on('click', function(){
+        var url = $(this).find('a').attr('href');
         $('#container').remove();
         $('#containerBox').load(url);
-        return false;
     })
     $('.more a').on('click',function(e){
         e.preventDefault();

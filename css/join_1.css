@@ -14,7 +14,9 @@
 }
 
 #join_section .row {
+    /* height: 500px; */
     width: 730px;
+    /* max-width: 30%; */
     background-color: rgba(255,255,255,0.5);
     position: relative;
 }
@@ -110,7 +112,6 @@
     padding: 10px;
     border: none;
     margin-right: 10px;
-    /* margin-left: 10px; */
     background: rgba(255,255,255,0.6);
 }
 
@@ -275,16 +276,11 @@
 @media screen and (max-width: 680px) {
         
     #join_section {
-        position: relative; height: 1400px; padding-top: 200px;
+        position: relative; height: 1500px; padding-top: 200px;
         font-family: 'Nanum Gothic', sans-serif;
         background: url(../images/under-sky.jpg) no-repeat;
         background-size: cover;
         background-position: center 60%;   
-    }
-    #join_section .row {
-        width: 95%;
-        background-color: rgba(255,255,255,0.5);
-        position: relative;
     }
     #join_section fieldset {
         position: relative;
@@ -324,22 +320,12 @@
         padding: 10px;
         margin-left: 10px;
     }
-    .login-box select {
-        padding: 10px;
-        border: none;
-        margin-right: 10px;
-        margin-left: 10px;
-        background: rgba(255,255,255,0.6);
-    }
     .login-box #phoneNum1,
     .login-box #phoneNum2,
     .login-box #phoneNum3  {
-        width: 50px;
-        padding: 5px;
-        margin: 0px;
+        width: 60px;
+        padding: 10px;
         margin-left: 10px;
-        text-align: center;
-
     }
     .login-box .birth-year ~ .small-input {
         width: 60px;
