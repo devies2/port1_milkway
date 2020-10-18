@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="css/way.css">
     <link rel="stylesheet" href="css/notice.css">
     <link rel="stylesheet" href="css/goods.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="./css/faq.css">
+    <link rel="stylesheet" href="./css/qna.css">
     <link rel="stylesheet" href="css/rwd.css">
     <!-- 플러그인, 공통 js파일 -->
     <script src="js/jquery-1.12.4.min.js"></script>
@@ -108,24 +111,25 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="way.html">BUSINESS</a>
+                        <a href="brand.html">PRODUCT</a>
                         <ul class="depth2">
-                            <li><a href="company.html">Locals</a></li>
-                            <li><a href="way.html">Locals</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="goods.html">PRODUCT</a>
-                        <ul class="depth2">
-                            <li><a href="goods.html">Product</a></li>
-                            <!-- <li><a href="#">Introduction</a></li> -->
+                            <li><a href="brand.html">BRAND</a></li>
+                            <li><a href="goods.html">PRODUCT</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="notice1.html">BOARD</a>
                         <ul class="depth2">
-                            <li><a href="notice1.html">Board1</a></li>
-                            <li><a href="notice2.html">Board2</a></li>
+                            <li><a href="notice1.html">BOARD1</a></li>
+                            <li><a href="notice2.html">BOARD2</a></li>
+                            <!-- <li><a href="#">Introduction</a></li> -->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html">Q&amp;A</a>
+                        <ul class="depth2">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="qna.html">Q&amp;A</a></li>
                         </ul>
                     </li>
                     <li>
@@ -286,21 +290,23 @@
 
                 </div>
                 <div class="footer-right">
-                    <form action="#" method="post">
-                        <fieldset>
-                            <legend class="blind">
+                    <form name="fam-site" id="fam-site" method="post">
+                        <!-- <fieldset> -->
+                            <!-- <legend class="blind">
                                 Family Site
-                            </legend>
+                            </legend> -->
                             <span class="fam">
                                 Family Site
                             </span>
-                            <select name="Family Site" id="">
-                                <option value="none">--Select--</option>
-                                <option value="pageA">pageA</option>
-                                <option value="pageB">pageB</option>
+                            <select name="Family Site" id="family-site" >
+                            <!-- <select name="Family Site" id="family-site" onchange="window.open(value)"> -->
+                                <option value="">--Select--</option>
+                                <option value="https://www.naver.com">pageA</option>
+                                <option value="http://www.google.co.kr">pageB</option>
                             </select>
+                            <a href="#none" title="새창열림">이동</a>
                             <!-- <button type="submit">Move</button> -->
-                        </fieldset>
+                        <!-- </fieldset> -->
                     </form>
                     <p>
                         Eager for Publisher &amp; Front-End Developer

@@ -121,4 +121,15 @@
 
 
     })
+    $('#family-site').on('click', function(){
+      console.log('뀨')
+      var familyUrl = $('#family-site').val();
+      if(familyUrl===!''){
+        $('#fam-site').attr({
+          href: familyUrl,
+        }).submit()
+      } else {
+        return false
+      }
+    })
 })(jQuery)

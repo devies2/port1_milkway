@@ -117,9 +117,13 @@
 
     /* nav 전부 복사해옴 */
     .logo_nav #nav {
-        position: absolute;
-        top: 100%;
+        /* position: absolute; */
+        position: fixed;
+        /* top: 100%; */
+        top: 120px;
+        bottom: 0;
         right: 0;
+        overflow-y: auto;
         transform: translateY(0%);
         color: #fff;
         /* 임시로 맞춰둔 margin-top값 */
